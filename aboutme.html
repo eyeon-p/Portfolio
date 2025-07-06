@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --point-color: #50ad4d;
+            --background-color: #FFF9F5;
+            --text-color: #3E2F2F;
+            --header-footer-bg: #94c4d5;
+        }
+
+        body {
+            font-family: 'Noto Sans EN', sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            border-radius: 12px;
+        }
+
+        header {
+            background-color: var(--header-footer-bg);
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        header nav li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        header h1 a{
+            color: white;
+            font-size: 40px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        header ul a {
+            color: white;
+            border-bottom: 3px solid transparent;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 8px 0;
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+
+        header nav a.current-page,
+        header nav a:hover {
+            color: var(--point-color);
+            text-decoration: none;
+            border-bottom-color: var(--point-color);
+        }
+
+        main {
+            display: flex;       
+
+            align-items: center;   
+
+            justify-content: center;
+
+            padding: 50px;
+        }
+
+        /*ABOUT ME*/
+        .about-me-grid {
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            gap: 50px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        .profile-sidebar img {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-sidebar h1 {
+            margin: 30;
+            line-height: 1;
+        }
+
+        .profile-sidebar p {
+            color: var(--point-color);
+            font-weight: 500;
+        }
+
+        .main-content section {
+            margin-bottom: 40px;
+        }
+
+        .main-content h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-color);
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .main-content h3 {
+            font-size: 30px;
+            margin: 0 0 5px 0;
+        }
+
+        .timeline-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item .date {
+            font-weight: 500;
+            width: 80px;
+        }
+
+        .timeline-item .details h3 {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline-item .details p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: var(--header-footer-bg);
+            text-align: center;
+            padding: 30px;
+            color: #201f1f;
+        }
+
+        footer {
+            margin: 5px 0;
+        }
+
+
+        </style>
+
+
+</head>
+<body>
+    <!--class 속성은 디자인을 위함-->
+    <div class="container">
+        <header>
+            <nav>
+                <h1><a href="aboutme.html">Soyeon Park</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volunteering.html">Volunteering</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="about-me-grid">
+                <aside class="profile-sidebar">
+                    <img src="myfacememoji.png" alt="Soyeon Park's profile picture">
+                    <h1>Soyeon Park </h1>
+                    <p>(she / her)</p>
+                    <p>High school student</p>
+
+                </aside>
+
+                <div class="main-content">
+                    <section>
+                        <h2>ABOUT ME</h2>
+                        <h3>Where creativity meets curiosity!</h3>
+                        <p>I’m an energetic and curious high school student with a love for creativity, culture, and communication.  
+                        Currently exploring opportunities in media, education, and design, always open to learning something new.</p>
+                    </section>
+
+                    <section>
+                        <h2>Education</h2>
+                        <ul class="timeline-list">
+                            <li class="timeline-item">
+                                <div class="date">2026</div>
+                                <div class="details">
+                                    <h3>Will receive OSSD</h3>
+                                    <p>Earl Haig Secondary School</p>
+                                    <p>August 2022 - Present</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+        </main>
+            
+        <footer>
+            <p>Copyright &copy; 2025 Soyeon Park. All Rights Reserved.</p>
+            <p>Based in Toronto, Canada | Email: soyeonpark0212@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
